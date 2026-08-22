@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - Sistem Informasi Desa Pandansari</title>
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <link rel="icon" type="image/jpeg" href="assets/MMD34.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar-section">
+        <div class="container navbar-container">
+            <div class="nav-brand">
+                <img src="assets/Pandansari.png" alt="Logo Pandansari" class="nav-logo">
+                <div class="nav-title">
+                    <h1>Pandansari</h1>
+                </div>
+            </div>
+            <div class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="active">Beranda</a></li>
+                    <li><a href="profil.html">Profil Desa</a></li>
+                    <li><a href="berita.html">Berita</a></li>
+                    <li><a href="pengumuman.html">Pengumuman</a></li>
+                    <li><a href="umkm.html">UMKM</a></li>
+                    <li><a href="struktur.html">Struktur</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 1. HERO SECTION (Selamat Datang, Cuaca, RT, Penduduk) -->
+    <section class="hero">
+        <video autoplay loop muted playsinline class="hero-bg">
+            <source src="assets/backdrop-desa.MOV" type="video/mp4">
+        </video>
+        <div class="overlay"></div> 
+        
+        <div class="container hero-content text-center">
+            <h1>Selamat Datang di <br>Desa Pandansari</h1>
+            <img src="assets/Brush.png" alt="Aksen" class="hero-brush">
+            
+            <!-- Tagline yang dikembalikan -->
+            <p>Jantungnya Desa UMKM di mana mayoritas warganya berdedikasi menciptakan beragam produk lokal unggulan kebanggaan daerah.</p>
+            <!-- AREA TOMBOL HERO -->
+<div class="hero-actions">
+    <!-- Tombol 1: Tonton Video (Gaya Outline) -->
+    <a href="#video-profil" class="btn-hero-outline">
+        Tonton Video Profil <i class="fas fa-play-circle"></i>
+    </a>
+
+    <!-- Tombol 2: Jelajahi Desa (Gaya Ikon Bulat + Teks) -->
+    <a href="#produk-unggulan" class="btn-hero-icon-text">
+        <div class="icon-circle"><i class="fas fa-compass"></i></div>
+        <span class="title">Jelajahi Desa</span>
+    </a>
+</div>
+        </div>
+
+        <!-- Kotak Info Besar (Dikembalikan seperti semula) -->
+        <div class="container floating-info-container">
+            <div class="floating-card">
+                <div class="f-info-item">
+                    <i id="weather-icon" class="fa-solid fa-cloud-sun"></i>
+                    <div>
+                        <h4 id="weather-temp">--°C</h4>
+                        <p id="weather-desc">Memuat cuaca...</p>
+                    </div>
+                </div>
+                <div class="f-info-item">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <div>
+                        <h4>64</h4>
+                        <p>Rukun Tetangga</p>
+                    </div>
+                </div>
+                <div class="f-info-item">
+                    <i class="fa-solid fa-users"></i>
+                    <div>
+                        <h4>7.159</h4>
+                        <p>Jiwa Penduduk</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- 2. PRODUK UNGGULAN (JERUK) - Efek Pop-up / Overlapping -->
+    <section class="unggulan-popup-section" id="produk-unggulan">
+        <div class="container">
+            <div class="unggulan-card">
+                
+                <!-- Bagian Kiri: Teks & Info -->
+                <div class="unggulan-text">
+                    <!-- Badge Rating Putih -->
+                    <div class="rating-badge">
+                        <span class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span> 
+                        <span class="score">(5/5)</span>
+                    </div>
+                    
+                    <h2>Produk Unggulan <br>Pandansari</h2>
+                    <p>Hasil bumi kebanggaan warga Pandansari. Ditanam di dataran tinggi lereng Semeru, menghasilkan tekstur buah yang segar, manis, dan berkualitas ekspor.</p>
+                    
+                    <!-- Profil Petani dengan Garis Pemisah -->
+                    <div class="petani-info">
+                        <!-- Mengganti Ikon dengan Gambar Profil Bundar -->
+                        <img src="https://via.placeholder.com/100" alt="Profil Petani" class="petani-img">
+                        <div>
+                            <h4>Kelompok Tani Makmur</h4>
+                            <p>Petani Lokal Bersertifikasi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bagian Kanan: Gambar Jeruk & Background Blob -->
+                <div class="unggulan-image">
+                    <!-- Lingkaran warna hijau zaitun di belakang jeruk -->
+                    <div class="bg-blob"></div>
+                    
+                    <!-- Gambar Jeruk -->
+                    <img src="assets/orange.png" alt="Jeruk Pandansari" class="main-img">
+                    
+                </div>
+
+                <div class="floating-tag tag-1">Panen Segar</div>
+                <div class="floating-tag tag-2">Kualitas Ekspor</div>
+                <div class="floating-tag tag-3">Stok Tersedia</div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. BERITA & PENGUMUMAN ACARA (Berdampingan Kiri & Kanan) -->
+    <section class="berita-pengumuman-section section-padding">
+        <div class="container bp-split">
+            
+            <!-- Kiri: Berita Desa & Proker -->
+ <div class="berita-section">
+    <h3 class="section-title">Berita Terbaru</h3>
+    
+    <div class="berita-grid">
+        <!-- Kartu Berita 1 -->
+        <div class="berita-card">
+            <img src="path-gambar-berita-1.jpg" alt="Thumbnail Berita">
+            <div class="berita-content">
+                <h4>Pengembangan Aplikasi "ASIH" untuk Mempermudah Rekap Data Posyandu</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum et libero in laoreet. Curabitur justo leo, semper...</p>
+            </div>
+        </div>
+
+        <!-- Kartu Berita 2 -->
+        <div class="berita-card">
+            <img src="path-gambar-berita-2.jpg" alt="Thumbnail Berita">
+            <div class="berita-content">
+                <h4>Tim MMD UB Mengadakan Sosialisasi PHBS di Sekolah Desa Pandansari</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum et libero in laoreet. Curabitur justo leo, semper...</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Tombol menggunakan gaya asli bawaan Anda -->
+    <a href="#" class="btn btn-outline-gold">Berita Lainnya</a>
+</div>
+
+    <!-- ==================================
+         BAGIAN KANAN: PENGUMUMAN
+    =================================== -->
+    <div class="pengumuman-section">
+        <h3 class="section-title">Pengumuman</h3>
+        
+        <div class="pengumuman-list">
+            <!-- Kartu Pengumuman 1 -->
+            <div class="pengumuman-card">
+                <h4>Gerak Jalan Kecamatan Poncokusumo</h4>
+                <div class="date"><i class="fas fa-calendar-alt"></i> Kamis, 6 Agustus 2026</div>
+            </div>
+            
+            <!-- Kartu Pengumuman 2 -->
+            <div class="pengumuman-card">
+                <h4>17 Agustusan di Desa Pandansari</h4>
+                <div class="date"><i class="fas fa-calendar-alt"></i> Senin, 17 Agustus 2026</div>
+            </div>
+        </div>
+
+            <div class="pengumuman-card">
+                <h4>Karnaval di Desa Pandansari</h4>
+                <div class="date"><i class="fas fa-calendar-alt"></i> Jumat, 28 Agustus 2026</div>
+            </div>
+                <a href="#" class="btn btn-outline-gold">Lihat Semua</a>
+        </div>
+
+    </div>
+
+        </div>
+    </section>
+
+    <!-- 4. ETALASE UMKM (5 Kartu + Tombol Khusus) -->
+    <section class="umkm-section section-padding">
+        <div class="container text-center">
+            <h2 class="section-title">Katalog UMKM Warga</h2>
+            <p style="margin-bottom: 40px;">Temukan dan dukung 5 sektor usaha kreatif masyarakat Desa Pandansari.</p>
+            
+            <div class="umkm-grid">
+                <div class="umkm-item">
+                    <div class="umkm-img-box">
+                        <img src="assets/bunga.jpg" alt="Bunga Kering">
+                    </div>
+                    <div class="umkm-info-box">
+                        <h3>Bunga Kering</h3>
+                        <p>19 Produk Tersedia</p>
+                    </div>
+                </div>
+                <div class="umkm-item">
+                    <div class="umkm-img-box">
+                        <img src="assets/kayu.jpg" alt="Kayu">
+                    </div>
+                    <div class="umkm-info-box">
+                        <h3>Kerajinan Kayu</h3>
+                        <p>15 Produk Tersedia</p>
+                    </div>
+                </div>
+                <div class="umkm-item">
+                    <div class="umkm-img-box">
+                        <img src="assets/bambu.jpeg" alt="Bambu">
+                    </div>
+                    <div class="umkm-info-box">
+                        <h3>Kerajinan Bambu</h3>
+                        <p>4 Produk Tersedia</p>
+                    </div>
+                </div>
+                <div class="umkm-item">
+                    <div class="umkm-img-box">
+                        <img src="assets/makanan.jpg" alt="Makanan">
+                    </div>
+                    <div class="umkm-info-box">
+                        <h3>Makanan & Minuman</h3>
+                        <p>10 Produk Tersedia</p>
+                    </div>
+                </div>
+                <div class="umkm-item">
+                    <div class="umkm-img-box">
+                        <img src="assets/print.webp" alt="Printing">
+                    </div>
+                    <div class="umkm-info-box">
+                        <h3>Usaha Printing</h3>
+                        <p>1 Layanan Tersedia</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tombol Menuju Halaman Khusus UMKM -->
+            <a href="umkm.html" class="btn btn-gold" style="margin-top: 50px;">Kunjungi Halaman UMKM Warga</a>
+        </div>
+    </section>
+
+    <!-- 5. AGENDA LIBUR NASIONAL (Pita Emas Otomatis dari JS) -->
+    <section class="agenda-strip">
+        <div class="container text-center">
+            <h4 style="color: #112211; margin-bottom: 15px; font-family: var(--font-body); font-weight: 700; letter-spacing: 1px;"><i class="fa-regular fa-calendar-check"></i> HARI LIBUR NASIONAL MENDATANG</h4>
+        </div>
+        <!-- JavaScript akan memasukkan data libur ke dalam div id ini -->
+        <div class="container strip-flex" id="agenda-nasional-container">
+            <p style="color: #112211;">Menyinkronkan kalender nasional...</p>
+        </div>
+    </section>
+
+    <!-- 6. VIDEO PROFIL DESA (Wadah Diperbesar) -->
+    <section class="video-profile-section section-padding" id="video-profil">
+        <div class="container text-center">
+            <h2 class="section-title">Video Profil Desa</h2>
+            <p style="margin-bottom: 40px;">Saksikan keindahan alam dan keseharian warga Pandansari melalui tayangan berikut.</p>
+            
+            <div class="video-container-box">
+            <video 
+                width="100%" 
+                height="520" 
+                controls 
+                poster="assets/thumbnail.png" 
+                style="object-fit: cover; border-radius: 20px; display: block;">
+               <source src="assets/VIDEO PROFIL.mp4" type="video/mp4">
+                Maaf, browser Anda tidak mendukung pemutaran video ini.
+            </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. GALERI RUNNING (2 Baris, Rapat dengan Footer) -->
+    <section class="gallery-marquee-section">
+        <!-- Baris 1: Kanan ke Kiri -->
+        <div class="marquee-track track-right">
+            <div class="marquee-content">
+                <img src="assets/Balai Desa.JPG" alt="Galeri">
+                <img src="assets/Lapangan.JPG" alt="Galeri">
+                <img src="assets/Rumah Kasun.JPG" alt="Galeri">
+                <img src="assets/SDN 1.JPG" alt="Galeri">
+                <img src="assets/matahari.jpg" alt="Galeri">
+                <img src="assets/bunga.JPG" alt="Galeri">
+                <img src="assets/makanan.jpg" alt="Galeri">
+                <!-- Duplikat agar loop mulus -->
+                <img src="assets/Balai Desa.JPG" alt="Galeri">
+                <img src="assets/Lapangan.JPG" alt="Galeri">
+                <img src="assets/Rumah Kasun.JPG" alt="Galeri">
+                <img src="assets/SDN 1.JPG" alt="Galeri">
+                <img src="assets/matahari.JPG" alt="Galeri">
+                <img src="assets/bunga.JPG" alt="Galeri">
+                <img src="assets/makanan.jpg" alt="Galeri">
+            </div>
+        </div>
+        
+        <!-- Baris 2: Kiri ke Kanan -->
+        <div class="marquee-track track-left" style="margin-top: 15px;">
+            <div class="marquee-content">
+                <img src="assets/Balai Desa.JPG" alt="Galeri">
+                <img src="assets/Lapangan.JPG" alt="Galeri">
+                <img src="assets/Rumah Kasun.JPG" alt="Galeri">
+                <img src="assets/SDN 1.JPG" alt="Galeri">
+                <img src="assets/matahari.JPG" alt="Galeri">
+                <img src="assets/bunga.JPG" alt="Galeri">
+                <img src="assets/makanan.jpg" alt="Galeri">
+                <!-- Duplikat agar loop mulus -->
+                <img src="assets/Balai Desa.JPG" alt="Galeri">
+                <img src="assets/Lapangan.JPG" alt="Galeri">
+                <img src="assets/Rumah Kasun.JPG" alt="Galeri">
+                <img src="assets/SDN 1.JPG" alt="Galeri">
+                <img src="assets/matahari.JPG" alt="Galeri">
+                <img src="assets/bunga.JPG" alt="Galeri">
+                <img src="assets/makanan.jpg" alt="Galeri">
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER NGEBRUK -->
+    <footer id="kontak" class="footer-ngebruk">
+        <div class="container footer-top">
+            <div class="f-kiri">
+                <div class="f-logo-title">
+                    <img src="assets/Pandansari.png" alt="Logo">
+                    <div>
+                        <h2>Desa Pandansari</h2>
+                        <p>Kecamatan Poncokusumo</p>
+                    </div>
+                </div>
+                <p class="f-address">Jl. Raya Pandansari No. 1, Krajan, Pandansari,<br>Kec. Poncokusumo, Kabupaten Malang, Jawa Timur 65157</p>
+            </div>
+            <div class="f-kanan">
+                <div class="f-socials">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <div class="f-kontak-info">
+                    <h3>Hubungi Kami</h3>
+                    <p><i class="fa-solid fa-phone"></i> 081234567890</p>
+                    <p><i class="fa-solid fa-envelope"></i> pemdes@pandansari.desa.id</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="container footer-bottom">
+            <div class="f-sponsor-logos">
+                <img src="assets/TutWuri.png" alt="Tut Wuri">
+                <img src="assets/UB.png" alt="UB">
+                <img src="assets/DB.png" alt="Diksaintek">
+                <img src="assets/Drpm.png" alt="DRPM">
+                <img src="assets/MMD.png" alt="MMD">
+                <img src="assets/MMD34.png" alt="MMD 34">
+            </div>
+            <div class="f-credit">
+                <p><strong>Dikembangkan oleh Tim MMD UB 34 Tahun 2026</strong><br>Program Mahasiswa Membangun Desa, Universitas Brawijaya</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

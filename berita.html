@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berita & Kegiatan - Desa Pandansari</title>
+    
+    <link rel="icon" type="image/jpeg" href="assets/MMD34.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- =========================================
+         HEADER & NAVBAR
+    ========================================= -->
+    <header class="navbar-section">
+        <div class="container navbar-container">
+            <div class="nav-brand">
+                <img src="assets/Pandansari.png" alt="Logo Pandansari" class="nav-logo">
+                <div class="nav-title">
+                    <h1>Pandansari</h1>
+                </div>
+            </div>
+            <div class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="profil.html">Profil Desa</a></li>
+                    <li><a href="berita.html" class="active">Berita</a></li>
+                    <li><a href="pengumuman.html">Pengumuman</a></li>
+                    <li><a href="umkm.html">UMKM</a></li>
+                    <li><a href="struktur.html">Struktur</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- =========================================
+         PAGE HEADER
+    ========================================= -->
+    <section class="page-header">
+        <div class="container text-center">
+            <h1>Berita & Kegiatan Desa</h1>
+            <p>Liputan terkini seputar pembangunan, kegiatan warga, dan program kerja KKN</p>
+        </div>
+    </section>
+
+    <!-- =========================================
+         KUMPULAN BERITA & PROKER (Grid System)
+    ========================================= -->
+    <section class="berita-section section-padding">
+        <div class="container">
+            <div class="berita-grid">
+                
+                <!-- Kartu Berita 1 (Proker KKN) -->
+                <article class="berita-card">
+                    <div class="berita-img-wrapper">
+                        <img src="https://via.placeholder.com/600x400" alt="Aplikasi ASIH" class="berita-img">
+                        <div class="berita-kategori">Proker KKN</div>
+                    </div>
+                    <div class="berita-content">
+                        <div class="berita-meta">
+                            <span><i class="fa-regular fa-calendar"></i> 23 Juli 2026</span>
+                            <span><i class="fa-regular fa-user"></i> MMD UB 34</span>
+                        </div>
+                        <h3><a href="#">Sukses! Peluncuran Aplikasi ASIH untuk Posyandu Pandansari</a></h3>
+                        <p>Mahasiswa KKN MMD UB 34 resmi meluncurkan sistem skrining digital (ASIH) untuk mempermudah rekapitulasi data Bidan dan Kader Posyandu.</p>
+                        <a href="#" class="read-more">Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Kartu Berita 2 (Berita Desa) -->
+                <article class="berita-card">
+                    <div class="berita-img-wrapper">
+                        <img src="https://via.placeholder.com/600x400" alt="Panen Raya" class="berita-img">
+                        <div class="berita-kategori" style="background-color: var(--primary-color); color: white;">Berita Desa</div>
+                    </div>
+                    <div class="berita-content">
+                        <div class="berita-meta">
+                            <span><i class="fa-regular fa-calendar"></i> 15 Juli 2026</span>
+                            <span><i class="fa-regular fa-user"></i> Kelompok Tani</span>
+                        </div>
+                        <h3><a href="#">Panen Raya Tomat Kelompok Tani Dusun Krajan Tembus 5 Ton</a></h3>
+                        <p>Inovasi pupuk organik yang digagas kelompok tani membuahkan hasil manis dengan peningkatan hasil panen tomat sebesar 30% dari tahun sebelumnya.</p>
+                        <a href="#" class="read-more">Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Kartu Berita 3 (Berita Desa) -->
+                <article class="berita-card">
+                    <div class="berita-img-wrapper">
+                        <img src="https://via.placeholder.com/600x400" alt="Kerja Bakti" class="berita-img">
+                        <div class="berita-kategori" style="background-color: var(--primary-color); color: white;">Berita Desa</div>
+                    </div>
+                    <div class="berita-content">
+                        <div class="berita-meta">
+                            <span><i class="fa-regular fa-calendar"></i> 10 Juli 2026</span>
+                            <span><i class="fa-regular fa-user"></i> Karang Taruna</span>
+                        </div>
+                        <h3><a href="#">Gotong Royong Bersih Desa Menjelang HUT Kemerdekaan RI</a></h3>
+                        <p>Karang Taruna bersama warga bersinergi membersihkan fasilitas umum dan memasang umbul-umbul untuk menyemarakkan peringatan 17 Agustus.</p>
+                        <a href="#" class="read-more">Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+            </div>
+            
+            <!-- Tombol Navigasi Halaman (Pagination) -->
+            <div class="pagination">
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link"><i class="fa-solid fa-angle-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         FOOTER
+    ========================================= -->
+    <footer id="kontak" class="footer-ngebruk">
+        <div class="container footer-top">
+            <div class="f-kiri">
+                <div class="f-logo-title">
+                    <img src="assets/Pandansari.png" alt="Logo">
+                    <div>
+                        <h2>Desa Pandansari</h2>
+                        <p>Kecamatan Poncokusumo</p>
+                    </div>
+                </div>
+                <p class="f-address">Jl. Raya Pandansari No. 1, Krajan, Pandansari,<br>Kec. Poncokusumo, Kabupaten Malang, Jawa Timur 65157</p>
+            </div>
+            <div class="f-kanan">
+                <div class="f-socials">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <div class="f-kontak-info">
+                    <h3>Hubungi Kami</h3>
+                    <p><i class="fa-solid fa-phone"></i> 081234567890</p>
+                    <p><i class="fa-solid fa-envelope"></i> pemdes@pandansari.desa.id</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="container footer-bottom">
+            <div class="f-sponsor-logos">
+                <img src="assets/TutWuri.png" alt="Tut Wuri">
+                <img src="assets/UB.png" alt="UB">
+                <img src="assets/DB.png" alt="Diksaintek">
+                <img src="assets/Drpm.png" alt="DRPM">
+                <img src="assets/MMD.png" alt="MMD">
+                <img src="assets/MMD34.png" alt="MMD 34">
+            </div>
+            <div class="f-credit">
+                <p><strong>Dikembangkan oleh Tim MMD UB 34 Tahun 2026</strong><br>Program Mahasiswa Membangun Desa, Universitas Brawijaya</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
